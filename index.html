@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/img/icon-logo.png" type="image/x-icon">
+    <title>Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="app">
+        <div class="player">
+            <div class="container">
+                <div class="player__info">
+                    <h3 class="player__title">Now Playing</h3>
+                    <div class="player__cd" style=" background-image: '';"></div>
+                    <div class="player__song">
+                        <h3 class="player__name"></h3>
+                        <p class="player__singer"></p>
+                    </div>
+                    <div class="player__progress">
+                        <div class="progress-area">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="progress-time">
+                            <span class="current"></span>
+                            <span class="duration"></span>
+                        </div>
+                    </div>
+                    <audio id="audio" src=""></audio>
+                </div>
+                <div class="player__control">
+                    <i class="btn btn-toggle-option fa-solid fa-right-left icon-sort active"></i>
+                    <i class="btn btn-toggle-option fas fa-random icon-random "></i>
+                    <i class="btn btn-toggle-option fas fa-redo icon-repeat"></i>
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-list">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="play__music">
+                <div class="play__header">
+                    <span class="play__left">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        <h3>My playlist</h3>
+                    </span>
+                    <div class="play__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <ul class="songs__content--list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
